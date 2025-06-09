@@ -1,18 +1,92 @@
 <!DOCTYPE html>
+<html>
  <head>
+    <meta charset="UTF-8">
     <title> STUDIO 17 </title>
+	<!--- tva POSLE DA GO NAPRAISH NA OTDELEN CSS FILE--->
    <style>
      header
-	 {background-color:#010101}
+	 {background-color:#010101; text-align:center;color:white; padding-20px}
+	 nav ul {
+	 list-style: none; /* removes dots (•) */ 
+	 padding: 0; margin: 0; text-align: center; /* centers the items */ 
+	 }
+	 nav ul li {
+	 display: inline-block; /* puts items side by side */
+	 margin: 0 20px; /* spacing between items */ 
+	 position:relative
+	 top:-15px;
+	 }
+	 nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: Arial;
+      padding: 15px 30px; /* This makes a nice block */
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      
+}
+
+     nav ul li a:hover {
+      color: #bfbfbf;
+     
+}
+	 .background-area {
+    
+    background-image: url("bck2.png"); /* Added semicolon */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Removed extra colon */
+    height: 500px;
+}
+    nav ul li a.active {
+	 color:#bfbfbf
+	 }
+	nav ul li::after {
+	content: "|";
+	color:#bfbfbf;
+	margin: 0 10px;
+	font-size: 35px;
+	font-weight: bold;
+	vertical-align:middle
+	position:relative
+	 top:-15px;
+	}
+	nav ul li:last-child::after {
+	 content:" ";
+	}
+
+
+	 
+	
+	
 	
    </style>
  </head>
  <body>
    <header> 
-     <!---KOGATO NAMERISH VECTORNO LOGO GO ZAMENI--->
-     <img src="mylogo.png"  width="200" height="200" alt="background-ne nachalo.png"/> 
+     <!---TVA GO KOPIRASH NAVSQKUDE VUV VSICHKI STRANICI.FUTURE ME, STANA LI SAITA DOBRE?--->
+      <img src="logo.jpg"  width="250" height="250" alt="background-ne nachalo.png"/>
+	  
+	  <nav>
+	    <ul>
+		  <li><a href="index.html" class="active"> НАЧАЛО </a></li>
+		  <!---DOVURSHI SI NAVUGACIQTA--->
+		  <li><a href="aboutus.html"> ЗА НАС</a></li>
+		  <li><a href="location.html> ЛОКАЦИЯ </a></li>
+		  <li><a href="makeanappointment.html">ЗАПИШИ ЧАС  </a></li>
+		</ul>
+	  </nav>
+	 
    </header>
+   <section class="background-area">
+    <p>Добре дошли 
+   
+   </section>
      
  
  
  </body>
+</html>
