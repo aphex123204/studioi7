@@ -3,62 +3,62 @@
  <head>
     <meta charset="UTF-8">
     <title> STUDIO 17 </title>
-	<!--- tva POSLE DA GO NAPRAISH NA OTDELEN CSS FILE--->
+	<link rel="stylesheet" href="style.css">
    <style>
-     header
-	 {background-color:#010101; text-align:center;color:white; padding-20px}
-	 nav ul {
-	 list-style: none; /* removes dots (•) */ 
-	 padding: 0; margin: 0; text-align: center; /* centers the items */ 
-	 }
-	 nav ul li {
-	 display: inline-block; /* puts items side by side */
-	 margin: 0 20px; /* spacing between items */ 
-	 position:relative
-	 top:-15px;
-	 }
-	 nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-size: 30px;
-      font-weight: bold;
-      font-family: Arial;
-      padding: 15px 30px; /* This makes a nice block */
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      
-}
-
-     nav ul li a:hover {
-      color: #bfbfbf;
-     
-}
-	 .background-area {
     
-    background-image: url("bck4.png"); /* Added semicolon */
-    background-size: 100% auto;
-    background-position:top center;
-    background-repeat: no-repeat; /* Removed extra colon */
-    height: 100vh;
-}
-    nav ul li a.active {
-	 color:#bfbfbf
+	 #intro 
+	 {
+	  text-align:center;
+	  color:white;
+	  font-size:60px;
+	  font-weight:bold;
+	  font-family: "arial";
+	  padding-top: 120px;
+	  text-shadow: 2px 2px 5px black;
+	  position:relative;
+	  top:-50px;
 	 }
-	nav ul li::after {
-	content: "|";
-	color:#bfbfbf;
-	margin: 0 10px;
-	font-size: 35px;
-	font-weight: bold;
-	vertical-align:middle
-	position:relative
-	 top:-15px;
+	html, body {
+	  margin:0;
+	  padding: 0;
+	  background-color:#010101;
+	 }
+	.background-area img{border-radius:10px;
+	box-shadow:0 0 10px black;
+	height:310px;
+	width:auto;}
+	
+    #studimg{
+	height:400px;
+	width:auto; 
+	display:block;
+	margin:0 auto;
+	
+	position:relative;
+	top:-150px;
+	left:150px;
+	z-index:2;
+	
 	}
-	nav ul li:last-child::after {
-	 content:" ";
+    #otvun{
+	height:400px;
+	width:auto; 
+	display:block;
+	margin:0 auto;
+	
+	position:relative;
+	top:-80px;
+	right:1px;
+	z-index:1;
+	
+	
 	}
-
-
+    .imgrow{
+	text-align:center;
+	gap:10px;
+	position:relative;
+	top:50px;
+	}
 	 
 	
 	
@@ -75,14 +75,22 @@
 		  <li><a href="index.html" class="active"> НАЧАЛО </a></li>
 		  <!---DOVURSHI SI NAVUGACIQTA--->
 		  <li><a href="aboutus.html"> ЗА НАС</a></li>
-		  <li><a href="location.html> ЛОКАЦИЯ </a></li>
-		  <li><a href="appo.html">ЗАПИШИ ЧАС  </a></li>
+		 
+		  <li><a href="price.html"> ЦЕНОРАЗПИС </a></li>
+		  <li><a href="appo.html">КОНТАКТИ  </a></li>
+		  <li><a href="cat.html">КАТАЛОГ</a> </li>
+		  
 		</ul>
 	  </nav>
 	 
    </header>
    <section class="background-area">
-    <p>Добре дошли 
+    <p id="intro"><b/>Добре дошли<br/>
+	в сайта на бръснарница STUDIO 17!</p>
+	<div style="display: flex;"class="imgrow">
+
+	<img id="otvun" src="otvun1.jpg"/>
+	</div>
    
    </section>
      

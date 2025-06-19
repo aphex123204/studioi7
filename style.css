@@ -1,0 +1,57 @@
+/*style.css*/
+header
+	 {background-color:#010101; text-align:center;color:white; padding:20px}
+	 nav ul {
+	 list-style: none; /* removes dots (•) */ 
+	 padding: 0; margin: 0; text-align: center; /* centers the items */ 
+	 }
+	nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;              /* <-- това прави всичко да е на една редица */
+  justify-content: center;   /* <-- подравняване по средата */
+  align-items: center;
+  gap: 20px;
+   }
+	 nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: Arial;
+      padding: 15px 30px; 
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      
+}
+
+     nav ul li a:hover {
+      color: #bfbfbf;transition: color 0.2s ease-in-out;
+     
+}
+	 .background-area {
+    
+    background-image: url("inside.jpeg"); /* Added semicolon */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Removed extra colon */
+    height: 100vh;
+
+}
+    nav ul li a.active {
+	 color:#bfbfbf
+	 }
+	nav ul li::after {
+	content: "|";
+	color:#bfbfbf;
+	margin: 0 3px;
+	font-size: 35px;
+	font-weight: bold;
+	vertical-align:middle
+	position:relative
+	 top:-15px;
+	}
+	nav ul li:last-child::after {
+	 content:" ";
+	}
